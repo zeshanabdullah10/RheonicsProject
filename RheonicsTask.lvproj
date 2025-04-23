@@ -20,6 +20,18 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Communication" Type="Folder">
+			<Item Name="Modbus" Type="Folder">
+				<Item Name="Modbus.lvclass" Type="LVClass" URL="../Communication/Modbus/Modbus.lvclass"/>
+			</Item>
+			<Item Name="Serial" Type="Folder">
+				<Item Name="Serial.lvclass" Type="LVClass" URL="../Communication/Serial/Serial.lvclass"/>
+			</Item>
+			<Item Name="TCP" Type="Folder">
+				<Item Name="TCP.lvclass" Type="LVClass" URL="../Communication/TCP/TCP.lvclass"/>
+			</Item>
+			<Item Name="Communication.lvclass" Type="LVClass" URL="../Communication/Communication.lvclass"/>
+		</Item>
 		<Item Name="Project Documentation" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Documentation Images" Type="Folder">
@@ -61,6 +73,7 @@
 			<Item Name="UI Data.ctl" Type="VI" URL="../controls/UI Data.ctl"/>
 		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
+		<Item Name="menu.rtm" Type="Document" URL="../menu.rtm"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
